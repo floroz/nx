@@ -467,6 +467,7 @@ describe('lib', () => {
           preset: '../../jest.preset.ts',
           testEnvironment: 'node',
           transform: {
+            // eslint-disable-next-line @typescript-eslint/naming-convention
             '^.+\\\\\\\\.[tj]sx?$': 'babel-jest'
           },
           moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],

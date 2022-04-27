@@ -426,6 +426,7 @@ describe('app', () => {
           preset: '../../jest.preset.ts',
           setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
           transform: {
+            // eslint-disable-next-line @typescript-eslint/naming-convention
             '^.+\\\\\\\\.[tj]s$': 'babel-jest'
           },
           moduleFileExtensions: ['ts', 'js', 'html'],
@@ -448,6 +449,7 @@ describe('app', () => {
           preset: '../../jest.preset.ts',
           setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
           transform: {
+            // eslint-disable-next-line @typescript-eslint/naming-convention
             '^.+\\\\\\\\.[tj]s$': '@swc/jest'
           },
           moduleFileExtensions: ['ts', 'js', 'html'],

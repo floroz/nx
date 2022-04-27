@@ -3,6 +3,7 @@ module.exports = {
   preset: '<%= offsetFromRoot %>jest.preset.ts',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
+    // eslint-disable-next-line @typescript-eslint/naming-convention
     'ts-jest': {
       tsconfig: '<rootDir>/tsconfig.spec.json',
       stringifyContentPathRegex: '\\.(html|svg)$',
@@ -11,6 +12,7 @@ module.exports = {
   testEnvironment: '<%= testEnvironment %>',<% } %>
   coverageDirectory: '<%= offsetFromRoot %>coverage/<%= projectRoot %>',
   transform: {
+    // eslint-disable-next-line @typescript-eslint/naming-convention
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular'
   },
   transformIgnorePatterns: ['node_modules/(?!.*\\.mjs$)']<% if(!skipSerializers) { %>,
